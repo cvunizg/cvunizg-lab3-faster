@@ -77,7 +77,7 @@ class Bottleneck(nn.Module):
 class ResNet(nn.Module):
     def __init__(
             self,
-            block: Type[Union[Bottleneck]],
+            block,
             layers: List[int],
             num_classes: int = 1000,
             zero_init_residual: bool = False,
