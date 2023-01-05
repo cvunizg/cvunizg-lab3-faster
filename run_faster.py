@@ -45,7 +45,7 @@ if __name__ == '__main__':
     model.load_state_dict(torch.load('data/faster_params.pth'))
     model.eval()
 
-    img = Image.open('bb44.jpg')
+    img = Image.open('bb44.png')
     img_pth = torch.from_numpy(np.array(img))
     image_mean = torch.tensor([0.485, 0.456, 0.406])
     image_std = torch.tensor([0.229, 0.224, 0.225])
